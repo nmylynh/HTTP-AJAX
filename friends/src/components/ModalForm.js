@@ -3,7 +3,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import axios from 'axios';
 
 
-export default class FriendUpdate extends React.Component {
+export default class ModalForm extends React.Component {
     state = { 
         modal: false,
         name: '',
@@ -43,17 +43,17 @@ export default class FriendUpdate extends React.Component {
             <ModalBody>
             <div className="row">
               <div className="form-group col-md-4">
-              <input type="text" name="name" value={this.state.name} onChange={this.handleChangeName} className="form-control" placeholder="name" />
+              <input type="text" name="name" value={this.state.name} onChange={this.handleChange} className="form-control" placeholder="name" />
                 </div>
                 </div>
               <div className="row">
                <div className="form-group col-md-4">
-                  <input type="text" name="age" value={this.state.team} onChange={this.handleChangeTeam} className="form-control" placeholder="age" />
+                  <input type="text" name="age" value={this.state.age} onChange={this.handleChange} className="form-control" placeholder="age" />
                  </div>
                 </div>
               <div className="row">
                <div className="form-group col-md-4">
-                  <input type="text" name="email" value={this.country} onChange={this.handleChangeCountry} className="form-control" placeholder="email" />
+                  <input type="text" name="email" value={this.state.email} onChange={this.handleChange} className="form-control" placeholder="email" />
                  </div>
                 </div>
             </ModalBody>
