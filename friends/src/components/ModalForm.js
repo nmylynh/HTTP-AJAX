@@ -53,7 +53,6 @@ export default class FriendUpdate extends React.Component {
                 </div>
               <div className="row">
                <div className="form-group col-md-4">
-                <label>Country:</label>
                   <input type="text" name="email" value={this.country} onChange={this.handleChangeCountry} className="form-control" placeholder="email" />
                  </div>
                 </div>
