@@ -19,7 +19,6 @@ const Friend = props => {
 
   Friend.propTypes = {
     friend: PropTypes.object,
-    key: PropTypes.number,
     name: PropTypes.string,
     age: PropTypes.number,
     email: PropTypes.string
